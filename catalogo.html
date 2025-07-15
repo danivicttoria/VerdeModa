@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo - VerdeModa</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__logo">VerdeModa</h1>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html">Inicio</a></li>
+        <li class="nav__item"><a href="catalogo.html">Catálogo</a></li>
+        <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h2 class="main__titulo">Catálogo</h2>
+    <div class="filtros">
+      <button onclick="filtrar('todos')">Todos</button>
+      <button onclick="filtrar('vestuario')">Vestuario</button>
+      <button onclick="filtrar('accesorios')">Accesorios</button>
+    </div>
+    <div class="catalogo" id="catalogo">
+      <div class="producto vestuario">
+        <img src="assets/img/vestido.jpg" alt="Vestido reciclado" class="producto__img"/>
+        <h3 class="producto__nombre">Vestido reciclado</h3>
+        <a href="producto.html" class="producto__btn">Ver más</a>
+      </div>
+      <div class="producto accesorios">
+        <img src="assets/img/bolso.jpg" alt="Bolso ecológico" class="producto__img"/>
+        <h3 class="producto__nombre">Bolso ecológico</h3>
+        <a href="producto.html" class="producto__btn">Ver más</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 VerdeModa</p>
+  </footer>
+  <script src="assets/js/filtros.js"></script>
+</body>
+</html>

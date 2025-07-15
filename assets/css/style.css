@@ -1,0 +1,80 @@
+
+:root {
+  --verde: #266b04;
+  --blanco: #fff;
+  --gris: #f4f4f4;
+  --fuente: 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--fuente);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: var(--verde);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem;
+}
+
+.header__logo {
+  margin: 0;
+}
+
+.header__slogan {
+  margin: 0.5rem 0;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav__item a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.main {
+  padding: 2rem;
+  background: var(--gris);
+}
+
+.destacados__grid, .catalogo {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background: var(--blanco);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.producto__img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.producto__btn {
+  background: var(--verde);
+  color: var(--blanco);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  background: #222;
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem;
+}
